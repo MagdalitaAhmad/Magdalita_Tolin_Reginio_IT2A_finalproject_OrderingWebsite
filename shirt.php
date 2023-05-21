@@ -1,3 +1,45 @@
+<?php
+// Path to the XML file
+$xmlFile = 'Magdalita_Tolin_Reginio_IT2A_OrderingWebsite.xml';
+
+// Load the XML file
+$xml = simplexml_load_file($xmlFile);
+
+// Find the product name
+$product1 = $xml->productCategories->shirt->product1;
+$price1 = $xml->productCategories->shirt->price1;
+
+$product2 = $xml->productCategories->shirt->product2;
+$price2 = $xml->productCategories->shirt->price2;
+
+$product3 = $xml->productCategories->dresses->product3;
+$price3 = $xml->productCategories->shirt->price3;
+
+$product4 = $xml->productCategories->shirt->product4;
+$price4 = $xml->productCategories->shirt->price4;
+
+$product5= $xml->productCategories->shirt->product5;
+$price5 = $xml->productCategories->shirt->price5;
+
+$product6 = $xml->productCategories->shirt->product6;
+$price6 = $xml->productCategories->shirt->price6;
+
+$product7 = $xml->productCategories->shirt->product7;
+$price7 = $xml->productCategories->shirt->price7;
+
+$product8 = $xml->productCategories->shirt->product8;
+$price8 = $xml->productCategories->shirt->price8;
+
+
+$product9 = $xml->productCategories->shirt->product9;
+$price9 = $xml->productCategories->shirt->price9;
+
+// Display the product name
+echo $product1."<br>";
+
+echo $price1."<br>";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -325,9 +367,9 @@
                                 <img class="img-fluid w-100" src="shirt/pic.webp" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product1;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price1;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -344,7 +386,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price2;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -361,7 +403,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price3;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -378,7 +420,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price4;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -395,7 +437,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price5;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -412,7 +454,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price6;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -429,7 +471,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price7;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -446,7 +488,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price8;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -463,7 +505,7 @@
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
                                 <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price9;?></h6><h6 class="text-muted ml-2"><del>$800.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">

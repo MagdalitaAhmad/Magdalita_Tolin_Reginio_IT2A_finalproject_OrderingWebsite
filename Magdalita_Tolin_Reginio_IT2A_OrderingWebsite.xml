@@ -3,33 +3,148 @@
     <productCategories>
         <dresses> 
             <product1>Everlast Longsleeve Pro</product1>
-            <price1>200</price1>
+            <price1>250</price1>
 
             <product2>EliteFit Performance Longsleeve</product2>
-            <price2>200</price2>
+            <price2>300</price2>
 
             <product3>ArcticGrip Thermal Longsleeve</product3>
-            <price3>200</price3>
+            <price3>400</price3>
 
             <product4>UltraFlex Active Longsleeve</product4>
-            <price4>200</price4>
+            <price4>500</price4>
 
             <product5>PowerTech Compression Longsleeve</product5>
-            <price5>200</price5>
+            <price5>550</price5>
 
             <product6>TrailBlaze Adventure Longsleeve</product6>
-            <price6>200</price6>
+            <price6>660</price6>
 
             <product7>SwiftShield Pro Longsleeve</product7>
-            <price7>200</price7>
+            <price7>450</price7>
 
             <product8>FlexForce Athlete Longsleeve</product8>
-            <price8>200</price8>
+            <price8>600</price8>
 
             <product9>FlexForce Athlete Longsleeve</product9>
-            <price9>200</price9>
+            <price9>480</price9>
         </dresses>
+
+
+        <shirt> 
+            <product1>EliteFit</product1>
+            <price1>250</price1>
+
+            <product2>FusionFlex</product2>
+            <price2>300</price2>
+
+            <product3>AeroTech</product3>
+            <price3>400</price3>
+
+            <product4>PrecisionPolo</product4>
+            <price4>500</price4>
+
+            <product5>StyleMasters</product5>
+            <price5>550</price5>
+
+            <product6>ProActive Polo</product6>
+            <price6>660</price6>
+
+            <product7>PrimeBlend</product7>
+            <price7>450</price7>
+
+            <product8>LuxePique</product8>
+            <price8>600</price8>
+
+            <product9>PowerStrike</product9>
+            <price9>480</price9>
+        </shirt>
         
+        <jeans> 
+            <product1>DenimXpress</product1>
+            <price1>250</price1>
+
+            <product2>UrbanChic</product2>
+            <price2>300</price2>
+
+            <product3>TrueEssence</product3>
+            <price3>400</price3>
+
+            <product4>LuxeDenim</product4>
+            <price4>500</price4>
+
+            <product5>ModernFusion</product5>
+            <price5>550</price5>
+
+            <product6>RebelDenim</product6>
+            <price6>660</price6>
+
+            <product7>ClassicStitch</product7>
+            <price7>450</price7>
+
+            <product8>VintageVibe</product8>
+            <price8>600</price8>
+
+            <product9>IndigoEdge</product9>
+            <price9>480</price9>
+        </jeans>
+
+        <swimwear> 
+            <product1>AquaSwell</product1>
+            <price1>150</price1>
+
+            <product2>SunSplash</product2>
+            <price2>200</price2>
+
+            <product3>WaveDaze</product3>
+            <price3>130</price3>
+
+            <product4>BeachBloom</product4>
+            <price4>120</price4>
+
+            <product5>SeaSiren</product5>
+            <price5>250</price5>
+
+            <product6>SunKissed</product6>
+            <price6>300</price6>
+
+            <product7>CoastalChic</product7>
+            <price7>180</price7>
+
+            <product8>ShorelineStyle</product8>
+            <price8>450</price8>
+
+            <product9>DiveInDesign</product9>
+            <price9>350</price9>
+        </swimwear>
         
+        <sleepwear> 
+            <product1>DreamSoft</product1>
+            <price1>150</price1>
+
+            <product2>CozyNights</product2>
+            <price2>200</price2>
+
+            <product3>SlumberLux</product3>
+            <price3>130</price3>
+
+            <product4>SereneSleep</product4>
+            <price4>120</price4>
+
+            <product5>TranquilComfort</product5>
+            <price5>250</price5>
+
+            <product6>NightBliss</product6>
+            <price6>300</price6>
+
+            <product7>SleepHaven</product7>
+            <price7>180</price7>
+
+            <product8>RestfulGlow</product8>
+            <price8>450</price8>
+
+            <product9>SweetDreams</product9>
+            <price9>350</price9>
+        </sleepwear>
     </productCategories>
 </orderinShop>
