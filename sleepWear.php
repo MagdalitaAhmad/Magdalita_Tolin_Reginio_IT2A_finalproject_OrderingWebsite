@@ -33,11 +33,6 @@ $price8 = $xml->productCategories->sleepwear->price8;
 
 $product9 = $xml->productCategories->jeans->product9;
 $price9 = $xml->productCategories->jeans->price9;
-
-// Display the product name
-echo $product1."<br>";
-
-echo $price1."<br>";
 ?>
 
 <!DOCTYPE html>

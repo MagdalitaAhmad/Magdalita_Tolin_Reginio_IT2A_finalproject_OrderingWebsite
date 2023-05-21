@@ -146,5 +146,152 @@
             <product9>SweetDreams</product9>
             <price9>350</price9>
         </sleepwear>
+
+        <sportswear> 
+            <product1>ActiveEdge</product1>
+            <price1>150</price1>
+
+            <product2>PowerStride</product2>
+            <price2>200</price2>
+
+            <product3>FitFlex</product3>
+            <price3>130</price3>
+
+            <product4>EliteSportswear</product4>
+            <price4>120</price4>
+
+            <product5>SwiftMotion</product5>
+            <price5>250</price5>
+
+            <product6>ProFit Athletics</product6>
+            <price6>300</price6>
+
+            <product7>EnergizeSports</product7>
+            <price7>180</price7>
+
+            <product8>SpeedForce</product8>
+            <price8>450</price8>
+
+            <product9>DynamicFit</product9>
+            <price9>350</price9>
+        </sportswear>
+
+        <jumpsuit> 
+            <product1>ChicAll-in-One</product1>
+            <price1>150</price1>
+
+            <product2>TrendyTrove</product2>
+            <price2>200</price2>
+
+            <product3>StyleMaven</product3>
+            <price3>130</price3>
+
+            <product4>JumpGlam</product4>
+            <price4>120</price4>
+
+            <product5>EffortlessElegance</product5>
+            <price5>250</price5>
+
+            <product6>ModaSuit</product6>
+            <price6>300</price6>
+
+            <product7>SvelteStride</product7>
+            <price7>180</price7>
+
+            <product8>FashionFusion</product8>
+            <price8>450</price8>
+
+            <product9>JumpsuitJunction</product9>
+            <price9>350</price9>
+        </jumpsuit>
+
+
+        <blazers> 
+            <product1>SharpEdge</product1>
+            <price1>150</price1>
+
+            <product2>EliteDapper</product2>
+            <price2>200</price2>
+
+            <product3>ClassicCharm</product3>
+            <price3>130</price3>
+
+            <product4>ModernSartorial</product4>
+            <price4>120</price4>
+
+            <product5>PowerBlaze</product5>
+            <price5>250</price5>
+
+            <product6>SophisticateStyle</product6>
+            <price6>300</price6>
+
+            <product7>TailoredElegance</product7>
+            <price7>180</price7>
+
+            <product8>BoldRefinement</product8>
+            <price8>450</price8>
+
+            <product9>TimelessGrace</product9>
+            <price9>350</price9>
+        </blazers>
+
+        <jackets> 
+            <product1>VentureTech</product1>
+            <price1>150</price1>
+
+            <product2>UrbanShield</product2>
+            <price2>200</price2>
+
+            <product3>ApexDefender</product3>
+            <price3>130</price3>
+
+            <product4>ApexDefender</product4>
+            <price4>120</price4>
+
+            <product5>ArcticEdge</product5>
+            <price5>250</price5>
+
+            <product6>StormGuard</product6>
+            <price6>300</price6>
+
+            <product7>ElitePilot</product7>
+            <price7>180</price7>
+
+            <product8>EverWarm</product8>
+            <price8>80</price8>
+
+            <product9>ExpeditionX</product9>
+            <price9>350</price9>
+        </jackets>
+
+
+        <shoes> 
+            <product1>StrideCraft</product1>
+            <price1>150</price1>
+
+            <product2>SoleMaven</product2>
+            <price2>200</price2>
+
+            <product3>FootFlex</product3>
+            <price3>130</price3>
+
+            <product4>VentureStep</product4>
+            <price4>120</price4>
+
+            <product5>ModaSole</product5>
+            <price5>250</price5>
+
+            <product6>VerveFootwear</product6>
+            <price6>300</price6>
+
+            <product7>SwiftStride</product7>
+            <price7>180</price7>
+
+            <product8>StellarShoes</product8>
+            <price8>80</price8>
+
+            <product9>EliteSole</product9>
+            <price9>350</price9>
+        </shoes>
     </productCategories>
 </orderinShop>
