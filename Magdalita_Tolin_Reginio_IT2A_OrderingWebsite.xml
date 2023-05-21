@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<orderinShop>
+    <productCategories>
+        <dresses> 
+            <product1>Everlast Longsleeve Pro</product1>
+            <price1>200</price1>
+
+            <product2>EliteFit Performance Longsleeve</product2>
+            <price2>200</price2>
+
+            <product3>ArcticGrip Thermal Longsleeve</product3>
+            <price3>200</price3>
+
+            <product4>UltraFlex Active Longsleeve</product4>
+            <price4>200</price4>
+
+            <product5>PowerTech Compression Longsleeve</product5>
+            <price5>200</price5>
+
+            <product6>TrailBlaze Adventure Longsleeve</product6>
+            <price6>200</price6>
+
+            <product7>SwiftShield Pro Longsleeve</product7>
+            <price7>200</price7>
+
+            <product8>FlexForce Athlete Longsleeve</product8>
+            <price8>200</price8>
+
+            <product9>FlexForce Athlete Longsleeve</product9>
+            <price9>200</price9>
+        </dresses>
+        
+        
+    </productCategories>
+</orderinShop>
