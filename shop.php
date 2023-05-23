@@ -1,3 +1,39 @@
+<?php
+// Path to the XML file
+$xmlFile = 'Magdalita_Tolin_Reginio_IT2A_OrderingWebsite.xml';
+
+// Load the XML file
+$xml = simplexml_load_file($xmlFile);
+
+// Find the product name
+$product1 = $xml->productCategories->homeProducts->product1;
+$price1 = $xml->productCategories->homeProducts->price1;
+
+$product2 = $xml->productCategories->homeProducts->product2;
+$price2 = $xml->productCategories->homeProducts->price2;
+
+$product3 = $xml->productCategories->homeProducts->product3;
+$price3 = $xml->productCategories->homeProducts->price3;
+
+$product4 = $xml->productCategories->shomeProductshirt->product4;
+$price4 = $xml->productCategories->homeProducts->price4;
+
+$product5= $xml->productCategories->homeProducts->product5;
+$price5 = $xml->productCategories->homeProducts->price5;
+
+$product6 = $xml->productCategories->homeProducts->product6;
+$price6 = $xml->productCategories->homeProducts->price6;
+
+$product7 = $xml->productCategories->homeProducts->product7;
+$price7 = $xml->productCategories->homeProducts->price7;
+
+$product8 = $xml->productCategories->homeProducts->product8;
+$price8 = $xml->productCategories->homeProducts->price8;
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -325,9 +361,9 @@
                                 <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product1;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price1;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -342,9 +378,9 @@
                                 <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product2;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price2;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -359,9 +395,9 @@
                                 <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product3;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price3;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -376,9 +412,9 @@
                                 <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product4;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price4;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -393,9 +429,9 @@
                                 <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product5;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price5;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -410,9 +446,9 @@
                                 <img class="img-fluid w-100" src="img/product-6.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product6;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price6;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -427,9 +463,9 @@
                                 <img class="img-fluid w-100" src="img/product-7.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product7;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price7;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -444,9 +480,9 @@
                                 <img class="img-fluid w-100" src="img/product-8.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product8;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$<?php echo $price8;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
@@ -461,9 +497,9 @@
                                 <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
                             </div>
                             <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                                <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                                <h6 class="text-truncate mb-3"><?php echo $product1;?></h6>
                                 <div class="d-flex justify-content-center">
-                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                    <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                                 </div>
                             </div>
                             <div class="card-footer d-flex justify-content-between bg-light border">
