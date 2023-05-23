@@ -1,4 +1,28 @@
-<!DOCTYPE html>
+<?php
+SESSION_START();
+
+$username="magdalita";
+$password="asd";
+
+
+$url_add = "http://".$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+
+if(isset($_REQUEST['submit_button'])===true){
+	if($_REQUEST['username'] !=$username){
+		header("Location: ".$url_add."?notexist");
+	}
+	else if($_REQUEST['username']== $username && $_REQUEST['password'] != $password){
+		header("Location: ".$url_add."?wrongpass");
+	}
+	else if($_REQUEST['username']== $username && $_REQUEST['password'] == $password){
+		header("Location: ".$url_add."?success");
+		$_SESSION['ses_username']= $username;
+		$_SESSION['ses_password']= $password;
+	}
+
+}
+
+?><!DOCTYPE html>
 <html>
 <head>
   <title>Login Page</title>
@@ -44,11 +68,35 @@
 </head>
 <body>
   <div class="container">
+
+  <?php
+        if(isset($_REQUEST['notexist'])=== true)
+        {
+          echo "<div class='alert alert-danger' role='alert'> Username does not exist </div>";
+        }else if(isset($_REQUEST['wrongpass']) === true){
+          echo"<div class='alert alert-danger' role='alert'> Incorrect Password </div>";
+        }else if(isset($_REQUEST['success']) === true){
+          echo"<div class='alert alert-danger' role='alert'> Redirecting to next page... </div>";
+          header("Refresh: 1; url=index.php");
+        }
+        else if(isset($_REQUEST['logout'])===true){
+            echo "<div class='alert alert-info' role='alert'>Thank you..</div>";
+  
+          }
+          else if(isset($_REQUEST['logfirst'])===true){
+            echo "<div class='alert alert-info' role='alert'>Please Log in first</div>";
+          }
+          else if(isset($_SESSION['ses_username'])===true){
+            echo "<div class='alert alert-warning' role='alert'> You're stile log in. 
+            <a href='index.php'> Please click here </a> to proceed.</div>";
+          }
+
+    ?>
     <h2>Login</h2>
     <form action="login.php" method="POST">
       <input type="text" name="username" placeholder="Username" required>
       <input type="password" name="password" placeholder="Password" required>
-      <input type="submit" value="Login">
+      <input type="submit" name="submit_button" value="Login">
     </form>
   </div>
 </body>

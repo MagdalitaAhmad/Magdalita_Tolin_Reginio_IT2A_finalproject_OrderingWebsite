@@ -1,4 +1,17 @@
 <?php
+session_start();
+
+if(isset($_SESSION['ses_username'])===false){
+   header("Location: login.php?loginfirst");
+}
+if (isset($_REQUEST['logout']) === true) {
+   session_destroy();
+   header("Location: login.php?logout");
+}
+?>
+
+
+<?php
 // Path to the XML file
 $xmlFile = 'Magdalita_Tolin_Reginio_IT2A_OrderingWebsite.xml';
 
@@ -203,7 +216,7 @@ $product16 = $xml->productCategories->trend->product16;
                             <a href="contact.php" class="nav-item nav-link">Contact</a>
                         </div>
                         <div class="navbar-nav ml-auto py-0">
-                            <a href="" class="nav-item nav-link">Log out</a>
+                            <a href="?logout" class="nav-item nav-link">Log out</a>
                             <a href="" class="nav-item nav-link">Register</a>
                         </div>
                     </div>
