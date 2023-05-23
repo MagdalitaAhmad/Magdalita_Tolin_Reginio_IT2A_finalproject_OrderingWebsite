@@ -348,5 +348,16 @@
         </trend>
     </productCategories>
 
+    <shopDetails>
+        <productname> Trendy Clothes</productname>
+        <price>300</price>
+        <text>Discover the epitome of comfort and style with our signature line of t-shirts. Crafted from the finest quality fabrics, our t-shirts are a testament to superior craftsmanship and attention to detail. With a perfect blend of softness and durability, they offer a luxuriously smooth feel against your skin. Embrace effortless elegance with our versatile designs, featuring modern cuts and flattering fits that accentuate your individuality. From vibrant prints to timeless classics, our t-shirts effortlessly elevate your everyday wardrobe. Experience unparalleled comfort and style with our t-shirts, the ultimate essential for those who appreciate the perfect balance of fashion and comfort.</text>
+        <description>
+        Introducing Radiant Raiment, a captivating and contemporary clothing line designed to empower individuals with confidence, style, and self-expression. With a fusion of modernity and sophistication, our brand offers a diverse range of fashion-forward garments that cater to the discerning tastes of today's trendsetters.
 
+        At Radiant Raiment, we believe that fashion should be an extension of one's personality. Our meticulously crafted collection showcases a harmonious blend of premium fabrics, impeccable tailoring, and intricate details. Each garment is a work of art, carefully curated to enhance the wearer's individuality and leave a lasting impression.
+
+        From sleek and edgy urban wear to elegant and timeless classics, our clothing line caters to a wide spectrum of styles and occasions. Whether you're seeking the perfect outfit for a formal event, a casual day out, or a night on the town, Radiant Raiment has you covered.
+        </description>
+    </shopDetails>
 </orderinShop>

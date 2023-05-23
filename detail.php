@@ -6,61 +6,41 @@ $xmlFile = 'Magdalita_Tolin_Reginio_IT2A_OrderingWebsite.xml';
 $xml = simplexml_load_file($xmlFile);
 
 // Find the product name
-$product1 = $xml->productCategories->shirt->product1;
-$price1 = $xml->productCategories->shirt->price1;
+$product1 = $xml->productCategories->homeProducts->product1;
+$price1 = $xml->productCategories->homeProducts->price1;
 
-$product2 = $xml->productCategories->shirt->product2;
-$price2 = $xml->productCategories->shirt->price2;
+$product2 = $xml->productCategories->homeProducts->product2;
+$price2 = $xml->productCategories->homeProducts->price2;
 
-$product3 = $xml->productCategories->dresses->product3;
-$price3 = $xml->productCategories->shirt->price3;
+$product3 = $xml->productCategories->homeProducts->product3;
+$price3 = $xml->productCategories->homeProducts->price3;
 
-$product4 = $xml->productCategories->shirt->product4;
-$price4 = $xml->productCategories->shirt->price4;
+$product4 = $xml->productCategories->shomeProductshirt->product4;
+$price4 = $xml->productCategories->homeProducts->price4;
 
-$product5= $xml->productCategories->shirt->product5;
-$price5 = $xml->productCategories->shirt->price5;
+$product5= $xml->productCategories->homeProducts->product5;
+$price5 = $xml->productCategories->homeProducts->price5;
 
-$product6 = $xml->productCategories->shirt->product6;
-$price6 = $xml->productCategories->shirt->price6;
+$product6 = $xml->productCategories->homeProducts->product6;
+$price6 = $xml->productCategories->homeProducts->price6;
 
-$product7 = $xml->productCategories->shirt->product7;
-$price7 = $xml->productCategories->shirt->price7;
+$product7 = $xml->productCategories->homeProducts->product7;
+$price7 = $xml->productCategories->homeProducts->price7;
 
-$product8 = $xml->productCategories->shirt->product8;
-$price8 = $xml->productCategories->shirt->price8;
-
-
-$product9 = $xml->productCategories->shirt->product9;
-$price9 = $xml->productCategories->shirt->price9;
-
-$product1 = $xml->productCategories->shirt->product1;
-$price1 = $xml->productCategories->shirt->price1;
-
-$product2 = $xml->productCategories->shirt->product2;
-$price2 = $xml->productCategories->shirt->price2;
-
-$product3 = $xml->productCategories->dresses->product3;
-$price3 = $xml->productCategories->shirt->price3;
-
-$product4 = $xml->productCategories->shirt->product4;
-$price4 = $xml->productCategories->shirt->price4;
-
-$product5= $xml->productCategories->shirt->product5;
-$price5 = $xml->productCategories->shirt->price5;
-
-$product6 = $xml->productCategories->shirt->product6;
-$price6 = $xml->productCategories->shirt->price6;
-
-$product7 = $xml->productCategories->shirt->product7;
-$price7 = $xml->productCategories->shirt->price7;
-
-$product8 = $xml->productCategories->shirt->product8;
-$price8 = $xml->productCategories->shirt->price8;
+$product8 = $xml->productCategories->homeProducts->product8;
+$price8 = $xml->productCategories->homeProducts->price8;
 
 
-$product9 = $xml->productCategories->shirt->product9;
-$price9 = $xml->productCategories->shirt->price9;
+// Find the product name
+$productname = $xml->shopDetails->productname;
+
+$price = $xml->shopDetails->price;
+
+$text = $xml->shopDetails->text;
+
+$description = $xml->shopDetails->description;
+
+
 
 ?>
 
@@ -265,7 +245,7 @@ $price9 = $xml->productCategories->shirt->price9;
             </div>
 
             <div class="col-lg-7 pb-5">
-                <h3 class="font-weight-semi-bold">Colorful Stylish Shirt</h3>
+                <h3 class="font-weight-semi-bold"><?php echo $productname;?></h3>
                 <div class="d-flex mb-3">
                     <div class="text-primary mr-2">
                         <small class="fas fa-star"></small>
@@ -276,8 +256,8 @@ $price9 = $xml->productCategories->shirt->price9;
                     </div>
                     <small class="pt-1">(50 Reviews)</small>
                 </div>
-                <h3 class="font-weight-semi-bold mb-4">$150.00</h3>
-                <p class="mb-4">Volup erat ipsum diam elitr rebum et dolor. Est nonumy elitr erat diam stet sit clita ea. Sanc invidunt ipsum et, labore clita lorem magna lorem ut. Erat lorem duo dolor no sea nonumy. Accus labore stet, est lorem sit diam sea et justo, amet at lorem et eirmod ipsum diam et rebum kasd rebum.</p>
+                <h3 class="font-weight-semi-bold mb-4">$<?php echo $price;?>.00</h3>
+                <p class="mb-4"><?php echo $text;?></p>
                 <div class="d-flex mb-3">
                     <p class="text-dark font-weight-medium mb-0 mr-3">Sizes:</p>
                     <form>
@@ -373,8 +353,7 @@ $price9 = $xml->productCategories->shirt->price9;
                 <div class="tab-content">
                     <div class="tab-pane fade show active" id="tab-pane-1">
                         <h4 class="mb-3">Product Description</h4>
-                        <p>Eos no lorem eirmod diam diam, eos elitr et gubergren diam sea. Consetetur vero aliquyam invidunt duo dolores et duo sit. Vero diam ea vero et dolore rebum, dolor rebum eirmod consetetur invidunt sed sed et, lorem duo et eos elitr, sadipscing kasd ipsum rebum diam. Dolore diam stet rebum sed tempor kasd eirmod. Takimata kasd ipsum accusam sadipscing, eos dolores sit no ut diam consetetur duo justo est, sit sanctus diam tempor aliquyam eirmod nonumy rebum dolor accusam, ipsum kasd eos consetetur at sit rebum, diam kasd invidunt tempor lorem, ipsum lorem elitr sanctus eirmod takimata dolor ea invidunt.</p>
-                        <p>Dolore magna est eirmod sanctus dolor, amet diam et eirmod et ipsum. Amet dolore tempor consetetur sed lorem dolor sit lorem tempor. Gubergren amet amet labore sadipscing clita clita diam clita. Sea amet et sed ipsum lorem elitr et, amet et labore voluptua sit rebum. Ea erat sed et diam takimata sed justo. Magna takimata justo et amet magna et.</p>
+                        <p><?php echo $description;?>.</p>
                     </div>
                     <div class="tab-pane fade" id="tab-pane-2">
                         <h4 class="mb-3">Additional Information</h4>
@@ -486,9 +465,9 @@ $price9 = $xml->productCategories->shirt->price9;
                             <img class="img-fluid w-100" src="img/product-1.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                            <h6 class="text-truncate mb-3"><?php echo $product1;?></h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>$<?php echo $price1;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -501,9 +480,9 @@ $price9 = $xml->productCategories->shirt->price9;
                             <img class="img-fluid w-100" src="img/product-2.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                            <h6 class="text-truncate mb-3"><?php echo $product2;?></h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>$<?php echo $price2;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -516,9 +495,9 @@ $price9 = $xml->productCategories->shirt->price9;
                             <img class="img-fluid w-100" src="img/product-3.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                            <h6 class="text-truncate mb-3"><?php echo $product3;?></h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>$<?php echo $price3;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -531,9 +510,9 @@ $price9 = $xml->productCategories->shirt->price9;
                             <img class="img-fluid w-100" src="img/product-4.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                            <h6 class="text-truncate mb-3"><?php echo $product4;?></h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>$<?php echo $price4;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
@@ -546,9 +525,9 @@ $price9 = $xml->productCategories->shirt->price9;
                             <img class="img-fluid w-100" src="img/product-5.jpg" alt="">
                         </div>
                         <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
-                            <h6 class="text-truncate mb-3">Colorful Stylish Shirt</h6>
+                            <h6 class="text-truncate mb-3"><?php echo $product5;?></h6>
                             <div class="d-flex justify-content-center">
-                                <h6>$123.00</h6><h6 class="text-muted ml-2"><del>$123.00</del></h6>
+                                <h6>$<?php echo $price5;?>.00</h6><h6 class="text-muted ml-2"><del>$700.00</del></h6>
                             </div>
                         </div>
                         <div class="card-footer d-flex justify-content-between bg-light border">
