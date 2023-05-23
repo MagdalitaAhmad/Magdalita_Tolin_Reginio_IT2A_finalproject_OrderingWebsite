@@ -1,3 +1,20 @@
+<?php
+// Path to the XML file
+$xmlFile = 'Magdalita_Tolin_Reginio_IT2A_OrderingWebsite.xml';
+
+// Load the XML file
+$xml = simplexml_load_file($xmlFile);
+
+// Find the product name
+$descriptions = $xml->contact->descriptions;
+$location = $xml->contact->location;
+$email = $xml->contact->email;
+$phone = $xml->contact->phone;
+
+$location1 = $xml->contact->location1;
+$email1 = $xml->contact->email1;
+$phone1 = $xml->contact->phone1;
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -209,18 +226,18 @@
             </div>
             <div class="col-lg-5 mb-5">
                 <h5 class="font-weight-semi-bold mb-3">Get In Touch</h5>
-                <p>Justo sed diam ut sed amet duo amet lorem amet stet sea ipsum, sed duo amet et. Est elitr dolor elitr erat sit sit. Dolor diam et erat clita ipsum justo sed.</p>
+                <p><?php echo $descriptions;?>.</p>
                 <div class="d-flex flex-column mb-3">
                     <h5 class="font-weight-semi-bold mb-3">Store 1</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i><?php echo $location;?></p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i><?php echo $email;?></p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary mr-3"></i><?php echo $phone;?></p>
                 </div>
                 <div class="d-flex flex-column">
                     <h5 class="font-weight-semi-bold mb-3">Store 2</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i>info@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary mr-3"></i><?php echo $location1;?></p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary mr-3"></i><?php echo $email1;?></p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary mr-3"></i><?php echo $phone1;?></p>
                 </div>
             </div>
         </div>

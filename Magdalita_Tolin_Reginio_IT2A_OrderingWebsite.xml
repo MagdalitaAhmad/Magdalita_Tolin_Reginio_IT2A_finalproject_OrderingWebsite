@@ -346,6 +346,9 @@
             <product8>Radiant Raiment</product8>
             <price8>80</price8>
         </trend>
+
+
+        
     </productCategories>
 
     <shopDetails>
@@ -359,5 +362,21 @@
 
         From sleek and edgy urban wear to elegant and timeless classics, our clothing line caters to a wide spectrum of styles and occasions. Whether you're seeking the perfect outfit for a formal event, a casual day out, or a night on the town, Radiant Raiment has you covered.
         </description>
+
+
     </shopDetails>
+
+
+    <contact>
+            <descriptions>You can reach out to us through multiple channels. For general inquiries or support, please email us at [email protected] Our dedicated team is committed to addressing your inquiries efficiently and ensuring your satisfaction.
+            </descriptions>
+            <location> Tanza Boac Marinduque</location>
+            <email> Magdalita@gmail.com</email>
+            <phone>09469808558</phone>
+
+            <location1> Tabi Boac Marinduque</location1>
+            <email1> Tolin@gmail.com</email1>
+            <phone1>09459106558</phone1>
+    </contact>
+
 </orderinShop>
